@@ -1,7 +1,8 @@
-# Runing gambas3 
+# Running gambas3 IDE on Ubuntu KDE via Docker Container
+
 ## Installing Ubuntu KDE Using Webtop in Docker
 
-This guide provides step-by-step instructions for setting up an Ubuntu KDE environment using Webtop in a Docker container. Follow the steps below to get started.
+This guide provides step-by-step instructions for setting up an Ubuntu KDE environment using Webtop in a Docker container and install gambas3. Follow the steps below to get started.
 
 ## Prerequisites
 
@@ -31,7 +32,7 @@ Before you begin, make sure you have the following:
 1. **Create a new directory** for your Docker setup:
    ```cmd
    mkdir gambas3 && cd gambas3
-2. **Create a new file docker-compose.yml** and copy inside the folowing code:
+2. **Create a new file docker-compose.yml** and copy the following code inside:
 
   ```
     version: '3.8'
@@ -60,11 +61,38 @@ Before you begin, make sure you have the following:
         shm_size: "10gb" # optional
         restart: unless-stopped
   ```
-3. **Open the terminal** in the file directory and run the command:
+3. **Open the terminal** in the directory where your docker-compose.yml file is located and run the command:
   ```
     docker-compose up -d
   ```
 ![Screenshot of the application](images/1.png)
 
-4. **Open Docker-Desktop**
+4. **Open Docker-Desktop** to check if the container is running
 ![Screenshot of the application](images/2.png)
+
+## Step 3: Open the browser
+
+1. **Navigate to url** http://localhost:3000
+![Screenshot of the application](images/3.png)
+
+2. **Open the terminal** and execute the following commands:
+
+  ```
+    sudo apt-get update
+  ```
+    and
+
+  ```
+    sudo apt-get install gambas3
+  ```
+![Screenshot of the application](images/4.png)
+
+3. **Open GambasIDE** from the applications menu:
+
+![Screenshot of the application](images/5.png)
+
+4. **Have fun!**
+
+![Screenshot of the application](images/6.png)
+
+![Screenshot of the application](images/7.png)
