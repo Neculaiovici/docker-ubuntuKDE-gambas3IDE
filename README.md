@@ -80,7 +80,6 @@ Before you begin, make sure you have the following:
   ```
     sudo apt-get update
   ```
-    and
 
   ```
     sudo apt-get install gambas3
