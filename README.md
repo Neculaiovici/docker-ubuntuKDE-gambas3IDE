@@ -1,4 +1,4 @@
-# Running gambas3 IDE on Ubuntu KDE via Docker Container
+# Setting Up Gambas3 IDE on Ubuntu KDE via Docker: A Step-by-Step Guide
 
 ## Installing Ubuntu KDE Using Webtop in Docker
 
